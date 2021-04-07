@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const ANIMATION_MS = 100
+const ANIMATION_MS = 300
 const VELOCITY = 0.015
 
 function float2position(x) {
@@ -52,7 +52,7 @@ class WordItem extends Component {
   render() {
     const styles = {
       position: 'absolute',
-      top: float2position(this.state.y),    
+      top: float2position(this.state.y),
       left: float2position(this.state.x)
     };
     return (

@@ -26,7 +26,7 @@ class TextInput extends Component {
     }
 
     componentDidMount(){
-        this.nameInput.focus(); 
+        this.nameInput.focus();
      }
 
     render() {
@@ -35,7 +35,7 @@ class TextInput extends Component {
                 <input
                     ref={(input) => { this.nameInput = input; }}
                     type="text"
-                    placeholder="Type in your sin"
+                    placeholder="Confess to nature"
                     value={this.state.inputText}
                     onChange={this.handleChange.bind(this)}
                 />

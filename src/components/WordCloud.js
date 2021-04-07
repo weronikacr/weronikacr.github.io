@@ -6,7 +6,7 @@ class WordCloud extends Component {
     constructor(props, context) {
         super(props, context)
         this.state = {
-          texts: ["Lorem", "ipsum", "dolor", "sit", "amet", "consectetur", "adipiscing", "elit"],
+          texts: ["I waste water", "I buy all food in plastic containers", "I'm too lazy to change", "I travel by car everywhere", "I love meat", "I don't believe my actions matter", "I have 5 kids", "I forget my reusable bag"],
           inputShown: true
         }
         this.wrapperRef = React.createRef();
@@ -14,7 +14,7 @@ class WordCloud extends Component {
         this.handleKeyDown = this.handleKeyDown.bind(this);
 
     }
-    
+
     componentDidMount() {
         document.addEventListener('mousedown', this.handleClickOutside);
         document.addEventListener("keydown", this.handleKeyDown);
@@ -32,7 +32,7 @@ class WordCloud extends Component {
         } else if (!this.state.inputShown ) {
             // on other key show input
             this.showInput()
-        } 
+        }
     }
 
     handleClickOutside(event) {
@@ -75,8 +75,8 @@ class WordCloud extends Component {
   render() {
       return (
         <div className="word-cloud">
-              { 
-              this.state.inputShown ? 
+              {
+              this.state.inputShown ?
                 <TextInput wrapperRef={this.wrapperRef} addText={this.addText.bind(this)}/> : null }
               <ul>
                   {

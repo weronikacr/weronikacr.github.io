@@ -1,12 +1,17 @@
 .App {
+  background-color: white; font-family: 'Neue Haas Grotesk', sans-serif; font-size: 20px}
+
+.App {
   text-align: center;
 }
 
 .App-header {
-  padding: 5px;
+  padding: 20px;
   text-align: left;
   width: auto;
 }
+
+
 
 .word-cloud {
   width: 100%;
@@ -14,25 +19,33 @@
 }
 
 .text-item {
-  width: 100px;
-  margin-left: -50px; 
-  transition: all 0.1s;
+  width: 400px;
+  margin-left: -50px;
+  transition: all 2s;
   transition-timing-function: linear;
 }
 
 .text-input {
-  width: 200px;
+  width: 20px;
   height: 70px;
-  top: 50%;
+  bottom: 0;
   left: 50%;
-  position: fixed;
-  margin-top: -25px;
-  margin-left: -50px; 
-  background-color: lightgrey;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -50px;
+  background-color: none;
   z-index: 100;
+  align-self: center;
 }
 
 
 .text-input > input[type="submit"] {
   display: none;
+}
+
+.con_logo {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 20px;
 }
